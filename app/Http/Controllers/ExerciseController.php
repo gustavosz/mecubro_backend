@@ -16,10 +16,11 @@ class ExerciseController extends Controller
 
     public function index()
     {
-        $numbers = array(13,3,1,9,5,22,12,-12, 100);
-        $number_x = 13;
+        $numbers = array();
 
-        if (! empty($numbers) && ! empty($number_x)) {
+        $number_x = 0;
+
+        if (!empty($numbers) && !empty($number_x)) {
 
             $result = $this->repository->functionNumbers($numbers, $number_x);
 

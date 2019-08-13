@@ -69,7 +69,6 @@
     <body>
     <div class="flex-center position-ref full-height">
         <div class="content">
-            {{ phpinfo() }}
             <p>Array: <span class="result">@json($numbers)</span></p>
             <p>X: <span class="result">{{ $number_x }}</span></p>
             <p>Respuesta: <span class="result">{{ ! $result ? 'false' : 'correcto ' .$result[0] . ' y ' .$result[1] }}</span></p>

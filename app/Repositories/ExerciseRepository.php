@@ -32,7 +32,7 @@ class ExerciseRepository
         return false;
     }
 
-    public function getStatistics() : Result
+    public function getStatistics(): Result
     {
         return Result::selectRaw(
             'COUNT(id) AS total,
@@ -41,7 +41,7 @@ class ExerciseRepository
         )->first();
     }
 
-    private function createResult2(int $result) : void
+    private function createResult2(int $result): void
     {
         Result::create([
             'result' => $result
